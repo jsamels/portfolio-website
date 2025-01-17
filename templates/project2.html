@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="section" id="medassist">
+    <h2>MedAssist Project</h2>
+    <p>A portable and personal Medical Assistant for all People. The project focused on
+       creating a human-centered solution for managing medical needs efficiently.</p>
+    <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <img src="{{ url_for('static', filename='images/medassist1.jpg') }}" alt="Prototype Design">
+            <h3>Prototype Design</h3>
+        </div>
+        <div class="portfolio-item">
+            <img src="{{ url_for('static', filename='images/medassist2.jpg') }}" alt="User Testing">
+            <h3>User Testing</h3>
+        </div>
+    </div>
+</div>
+{% endblock %}
