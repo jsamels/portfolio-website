@@ -1,168 +1,38 @@
-/* General Styles */
+/* General Reset */
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-size: 18px; /* Increase base font size */
+    background-color: #121212;
+    color: #ffffff;
 }
 
-/* Header */
-header {
-    background-color: #0c2340;
-    color: white;
-    text-align: center;
-    padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #0a0f1e, #1e293b);
 }
 
-header h1 {
-    margin: 0;
-    font-size: 3em; /* Larger header text */
+/* Navbar */
+.navbar-brand {
+    font-weight: 700;
 }
 
-nav {
-    margin-top: 15px;
+/* Portfolio Cards */
+.card {
+    border: none;
 }
-
-nav a.button {
-    text-decoration: none;
-    color: white;
-    background-color: #00509e;
-    padding: 15px 25px; /* Larger buttons */
-    margin: 0 15px;
-    border-radius: 5px;
-    font-size: 1.2em; /* Larger button text */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-nav a.button:hover {
-    background-color: #0073e6;
-    transform: scale(1.1);
-}
-
-/* Main Section */
-main {
-    flex: 1;
-    width: 95%; /* Full-screen width with padding */
-    max-width: 1600px; /* Limit maximum width for readability */
-    margin: 40px auto;
-    padding: 30px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* About Me Section */
-.about-me {
-    text-align: center;
-    margin: 40px auto;
-    max-width: 900px; /* Increase the width of the About Me section */
-}
-
-.about-me p {
-    font-size: 1.2em; /* Larger text for readability */
-    line-height: 1.8em;
-    color: #555;
-}
-
-.headshot {
-    width: 150px; /* Larger headshot */
-    height: 150px;
-    border-radius: 50%;
-    border: 4px solid #0c2340;
-    margin: 0 auto 20px;
-    display: block;
-}
-
-/* Project Grid */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Wider cards */
-    gap: 40px; /* More space between cards */
-    margin-top: 20px;
-}
-
-.project-card {
-    background: white;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
-    width: 100%;
-    max-width: 450px; /* Ensure consistent width for larger cards */
-}
-
-.project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.project-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.project-card h3 {
-    font-size: 1.5em; /* Larger project titles */
-    margin: 15px 0;
-    color: #0c2340;
-}
-
-.project-card p {
-    font-size: 1em;
-    color: #666;
-}
-
-.project-card .button {
-    margin-top: 15px;
-    font-size: 1.1em;
-}
-
-/* Contact Details */
-.contact-details {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.contact-details p {
-    font-size: 1.2em;
-    margin: 15px 0;
-}
-
-.contact-details a {
-    color: #00509e;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.contact-details a:hover {
-    color: #0073e6;
+.card img {
+    border-radius: 5px 5px 0 0;
 }
 
 /* Footer */
 footer {
-    background-color: #0c2340;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    font-size: 1em;
-    margin-top: 30px;
+    background-color: #0e151c;
+    color: #d1d5db;
 }
-
-/* Animations */
-.project-card:hover img {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+footer a:hover {
+    text-decoration: underline;
 }
-
 
 
