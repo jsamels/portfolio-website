@@ -1,38 +1,84 @@
 /* General Reset */
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #2b3d4f; /* Grayish blue */
+    color: #f5f5f5; /* Professional white */
 }
 
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(135deg, #0a0f1e, #1e293b);
+    background: linear-gradient(135deg, #1e293b, #2b3d4f); /* Blue-gray gradient */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
 }
 
-/* Navbar */
-.navbar-brand {
+.hero h1 {
+    font-size: 3.5rem;
     font-weight: 700;
+    margin-bottom: 1rem;
 }
 
-/* Portfolio Cards */
-.card {
-    border: none;
+.hero p {
+    font-size: 1.2rem;
+    color: #f5f5f5; /* White for visibility */
 }
-.card img {
-    border-radius: 5px 5px 0 0;
+
+.hero .btn {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #ffffff;
+    color: #2b3d4f;
+}
+
+/* Section Styling */
+section {
+    padding: 4rem 1rem;
+    background-color: #2b3d4f; /* Matches the grayish blue background */
+    color: #f5f5f5; /* White text */
+}
+
+section h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+section p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 /* Footer */
 footer {
-    background-color: #0e151c;
+    background-color: #1e293b;
     color: #d1d5db;
+    text-align: center;
+    padding: 1.5rem 0;
 }
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 footer a:hover {
     text-decoration: underline;
 }
-
-
