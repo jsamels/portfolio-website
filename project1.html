@@ -6,11 +6,11 @@
     <title>Landscape Design</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">John Samels</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -19,7 +19,15 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-bs-toggle="dropdown">Portfolio</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="project1.html">Landscape Design</a></li>
+                            <li><a class="dropdown-item" href="project2.html">MedAssist Project</a></li>
+                            <li><a class="dropdown-item" href="project3.html">Adventure Outfitters</a></li>
+                            <li><a class="dropdown-item" href="graphic_design.html">Graphic Design</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -32,12 +40,23 @@
         <p class="text-center">
             Creative outdoor spaces designed with precision and creativity. These designs reflect my passion for aesthetics and functionality.
         </p>
+        <p>
+            My experience in landscape design and installation has provided me with a solid foundation in UX design. The process of creating outdoor spaces involves understanding client needs, responding to feedback, and presenting designs in a way that is both visually appealing and functional. This experience has allowed me to easily comprehend the principles of UX design, as both fields require a keen eye for detail, effective communication, and the ability to iterate on designs based on client feedback.
+        </p>
+        <p>
+            In landscape design, I used CAD software to provide clients with exact measurements and detailed plans. This not only ensured accuracy but also helped clients visualize the final design. Similarly, in UX design, wireframes and prototypes serve the same purpose, allowing clients to see a tangible representation of the design before it is fully developed.
+        </p>
+        <p>
+            Physical rendered designs play a crucial role in helping clients get a better visual understanding of the project. By creating realistic renderings, I was able to effectively communicate the design to clients, allowing them to see how the final product would look in their space. This approach is also valuable in UX design, where high-fidelity prototypes can provide a clear picture of the user interface and experience.
+        </p>
         <div class="row g-4 mt-4">
             <div class="col-md-6">
                 <img src="static/images/landscapecad.jpg" class="img-fluid rounded" alt="Landscape CAD Design">
+                <p class="text-center mt-2">CAD Design: Provides exact measurements and detailed plans for the client.</p>
             </div>
             <div class="col-md-6">
                 <img src="static/images/landscaperender.jpg" class="img-fluid rounded" alt="Rendered Landscape Design">
+                <p class="text-center mt-2">Rendered Design: Helps the client visualize the design in a familiar space.</p>
             </div>
         </div>
     </section>

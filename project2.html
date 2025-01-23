@@ -6,11 +6,26 @@
     <title>MedAssist Project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <style>
+        .medassist-image {
+            width: 200px;
+            height: 400px;
+            border-radius: 30px;
+            object-fit: cover;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .image-description {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">John Samels</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -19,7 +34,15 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-bs-toggle="dropdown">Portfolio</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="project1.html">Landscape Design</a></li>
+                            <li><a class="dropdown-item" href="project2.html">MedAssist Project</a></li>
+                            <li><a class="dropdown-item" href="project3.html">Adventure Outfitters</a></li>
+                            <li><a class="dropdown-item" href="graphic_design.html">Graphic Design</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -32,15 +55,36 @@
         <p class="text-center">
             A portable medical assistant designed for personalized healthcare. This project focuses on improving patient accessibility and engagement.
         </p>
+        <p>
+            <strong>Project Introduction:</strong> My group for a HCI and Design and I were tasked with creating a prototype for an app that could solve a real-world problem. We initially began our project focusing on language barriers in the healthcare system. While this problem is still relevant to our design process, we interviewed health care patients and workers for our primary research, which told us that there were other issues that needed attention first. Our project evolved to become a tool that strives for holistic care. Ranging from a medical records application to an app with a built-in medical translator, the application will provide all-around patient care in a system that often lacks it.
+        </p>
+        <p>
+            <strong>Patient-Focused Design:</strong> Our project primarily focuses on the patient rather than the healthcare professional. This decision was guided by our primary research findings. Overall, patients expressed a greater desire for change in the healthcare system compared to the medical professionals we interviewed. We also had numerous rounds of user testing, which helped us create an easy to use application to help simplify the complicated world of healthcare.
+        </p>
         <div class="row g-4 mt-4">
             <div class="col-md-4">
-                <img src="static/images/medassist_screen1.jpg" class="img-fluid rounded" alt="MedAssist Screen 1">
+                <img src="static/images/medassist screen 1.jpg" class="img-fluid medassist-image" alt="MedAssist Screen 1">
+                <p class="image-description">Screen 1: Welcome page</p>
             </div>
             <div class="col-md-4">
-                <img src="static/images/medassist_screen2.jpg" class="img-fluid rounded" alt="MedAssist Screen 2">
+                <img src="static/images/medassist screen 2.jpg" class="img-fluid medassist-image" alt="MedAssist Screen 2">
+                <p class="image-description">Screen 2: Language selection dropdown menu</p>
             </div>
             <div class="col-md-4">
-                <img src="static/images/medassist_screen3.jpg" class="img-fluid rounded" alt="MedAssist Screen 3">
+                <img src="static/images/medassist screen 3.jpg" class="img-fluid medassist-image" alt="MedAssist Screen 3">
+                <p class="image-description">Screen 3: Homepage</p>
+            </div>
+            <div class="col-md-4">
+                <img src="static/images/medassist screen 4.jpg" class="img-fluid medassist-image" alt="MedAssist Screen 4">
+                <p class="image-description">Screen 4: User profile page</p>
+            </div>
+            <div class="col-md-4">
+                <img src="static/images/medassist screen 5.jpg" class="img-fluid medassist-image" alt="MedAssist Screen 5">
+                <p class="image-description">Screen 5: Personal user QR code to store medical records and check-in to appointments</p>
+            </div>
+            <div class="col-md-4">
+                <img src="static/images/paths.jpg" class="img-fluid medassist-image" alt="Paths">
+                <p class="image-description">Paths: All functionalities of the prototype</p>
             </div>
         </div>
     </section>
