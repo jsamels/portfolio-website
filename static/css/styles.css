@@ -3,14 +3,27 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #2b3d4f; /* Grayish blue */
-    color: #f5f5f5; /* Professional white */
+    background-color: #2b3d4f; /* Blueish grey */
+    color: #f5f5f5; /* White text */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1e293b;
+}
+
+.navbar a {
+    color: #f5f5f5;
+}
+
+.navbar a:hover {
+    color: #ffffff;
 }
 
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(135deg, #1e293b, #2b3d4f); /* Blue-gray gradient */
+    background: linear-gradient(135deg, #1e293b, #2b3d4f); /* Gradient */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,7 +39,7 @@ body {
 
 .hero p {
     font-size: 1.2rem;
-    color: #f5f5f5; /* White for visibility */
+    color: #f5f5f5; /* White text */
 }
 
 .hero .btn {
@@ -48,7 +61,7 @@ body {
 /* Section Styling */
 section {
     padding: 4rem 1rem;
-    background-color: #2b3d4f; /* Matches the grayish blue background */
+    background-color: #2b3d4f; /* Matches the blueish-grey background */
     color: #f5f5f5; /* White text */
 }
 
@@ -66,10 +79,32 @@ section p {
     max-width: 800px;
 }
 
+/* Cards */
+.card {
+    background-color: #1e293b; /* Dark blue-grey for contrast */
+    color: #f5f5f5; /* White text */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
 /* Footer */
 footer {
     background-color: #1e293b;
-    color: #d1d5db;
+    color: #d1d5db; /* Slightly lighter white */
     text-align: center;
     padding: 1.5rem 0;
 }
