@@ -7,6 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/css/styles.css">
+    <style>
+        .ao-image {
+            width: 100%;
+            height: 300px;
+            object-fit: fill;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -40,12 +48,21 @@
         <p class="text-center">
             An interactive inventory management system for outdoor enthusiasts. This project focuses on user-friendly design and efficient functionality.
         </p>
+        <p>
+            <strong>Project Description:</strong> I developed a functioning web application for a theoretical outfitting company using HTML, Python, MySQL, Flask, and Bootstrap. The application features an interactive and responsive user interface, allowing users to update a live database through an easy design that simplifies the editing and adding of people and equipment to the database. Additionally, there is a feature to rent equipment using datetime functions to check out and return equipment.
+        </p>
         <div class="row g-4 mt-4">
-            <div class="col-md-6">
-                <img src="static/images/aoequipment.png" class="img-fluid rounded" alt="Adventure Outfitters Equipment">
+            <div class="col-md-4">
+                <img src="static/images/aoequipment.png" class="img-fluid ao-image" alt="Adventure Outfitters Equipment">
+                <p class="text-center mt-2">Equipment Management: Manage and update equipment inventory.</p>
             </div>
-            <div class="col-md-6">
-                <img src="static/images/aohomescreen.png" class="img-fluid rounded" alt="Adventure Outfitters Home Screen">
+            <div class="col-md-4">
+                <img src="static/images/aohomescreen.png" class="img-fluid ao-image" alt="Adventure Outfitters Home Screen">
+                <p class="text-center mt-2">Home Screen: User-friendly interface for easy navigation.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="static/images/aopeople.png" class="img-fluid ao-image" alt="Adventure Outfitters People">
+                <p class="text-center mt-2">People Management: Manage and update user information.</p>
             </div>
         </div>
     </section>
@@ -60,4 +77,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
