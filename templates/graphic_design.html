@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Graphic Design{% endblock %}
+{% block content %}
+<section class="project-detail">
+    <h2>Graphic Design</h2>
+    <p>Showcasing creative designs that combine artistry with impactful visuals.</p>
+    <div class="project-images">
+        <img src="{{ url_for('static', filename='images/katescrew.JPG') }}" alt="Kate's Crew Design">
+        <img src="{{ url_for('static', filename='images/rushgraphic.JPG') }}" alt="Rush Graphic Design">
+    </div>
+</section>
+{% endblock %}

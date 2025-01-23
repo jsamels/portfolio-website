@@ -1,18 +1,14 @@
 {% extends 'base.html' %}
+{% block title %}Adventure Outfitters{% endblock %}
 {% block content %}
-<div class="section" id="adventure">
+<section class="project-detail">
     <h2>Adventure Outfitters</h2>
-    <p>I developed a functioning web application using HTML, JavaScript, and Python for an outfitting company. This 
-       project focused on creating an interactive and responsive user interface that enhanced customer engagement.</p>
-    <div class="portfolio-grid">
-        <div class="portfolio-item">
-            <img src="{{ url_for('static', filename='images/adventure1.jpg') }}" alt="Adventure Outfitters">
-            <h3>Website Overview</h3>
-        </div>
-        <div class="portfolio-item">
-            <img src="{{ url_for('static', filename='images/adventure2.jpg') }}" alt="Interactive Features">
-            <h3>Interactive Features</h3>
-        </div>
+    <p>Developed a responsive and interactive web application for outdoor adventure enthusiasts.</p>
+    <div class="project-images">
+        <img src="{{ url_for('static', filename='images/aoequipment.png') }}" alt="Adventure Equipment">
+        <img src="{{ url_for('static', filename='images/aohomescreen.png') }}" alt="Adventure Home Screen">
+        <img src="{{ url_for('static', filename='images/aopeople.png') }}" alt="Adventure People">
     </div>
-</div>
+</section>
 {% endblock %}
+
