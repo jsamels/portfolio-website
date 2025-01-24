@@ -7,6 +7,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/css/styles.css">
+    <style>
+        .graphic-image {
+            width: 100%;
+            height: 500px; /* Set a fixed height */
+            object-fit: contain; /* Ensure the full image is displayed */
+            display: block;
+            margin: 0 auto;
+        }
+        .image-description {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -35,7 +48,7 @@
     </nav>
 
     <!-- Project Content -->
-    <section class="container py-5">
+    <main class="container py-5">
         <h2 class="text-center">Graphic Design</h2>
         <p class="text-center">
             I have always loved to design graphics for events going on in organizations I am a part of. My most recent designs are for Philanthropy and Recruitment events for my fraternity.
@@ -45,23 +58,15 @@
         </p>
         <div class="row g-4 mt-4">
             <div class="col-md-6">
-                <div class="card h-100">
-                    <img src="static/images/katescrew.jpg" class="card-img-top" alt="Kate's Crew Design">
-                    <div class="card-body text-center">
-                        <p class="card-text">Kate's Crew Design</p>
-                    </div>
-                </div>
+                <img src="static/images/katescrew.jpg" class="graphic-image" alt="Kate's Crew Design">
+                <p class="image-description">Kate's Crew Design</p>
             </div>
             <div class="col-md-6">
-                <div class="card h-100">
-                    <img src="static/images/rushgraphic.jpg" class="card-img-top" alt="Rush Graphic Design">
-                    <div class="card-body text-center">
-                        <p class="card-text">Rush Graphic Design</p>
-                    </div>
-                </div>
+                <img src="static/images/rushgraphic.jpg" class="graphic-image" alt="Rush Graphic Design">
+                <p class="image-description">Rush Graphic Design</p>
             </div>
         </div>
-    </section>
+    </main>
 
     <!-- Footer -->
     <footer class="py-4 bg-dark text-light text-center">
