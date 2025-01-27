@@ -33,6 +33,15 @@
         .relevant-course {
             margin-bottom: 20px;
         }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        main {
+            flex: 1;
+        }
     </style>
 </head>
 <body>
@@ -46,8 +55,17 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-bs-toggle="dropdown">Portfolio</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="project1.html">Landscape Design</a></li>
+                            <li><a class="dropdown-item" href="project2.html">MedAssist Project</a></li>
+                            <li><a class="dropdown-item" href="project3.html">Adventure Outfitters</a></li>
+                            <li><a class="dropdown-item" href="graphic_design.html">Graphic Design</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -62,7 +80,9 @@
         <div class="academics-section">
             <h3>Education</h3>
             <p><strong>Indiana University</strong></p>
-            <p>Bachelor's in Informatics<br>GPA: 3.5</p>
+            <p>Bachelor's in Informatics</p>
+            <p>Minors: Business, Human-Computer Interaction/Design (HCI/D)</p>
+            <p>GPA: 3.5</p>
         </div>
 
         <!-- Academic Achievements -->
@@ -101,21 +121,9 @@
                 <h4>I210: Problem Solving and Programming</h4>
                 <p>In this programming-focused course, I learned problem decomposition, Python programming, object-oriented design, and how to write functional and efficient code. The course strengthened my troubleshooting and code safety skills.</p>
             </div>
-
-            <div class="relevant-course">
-                <h4>I211: Python and Flask Development</h4>
-                <p>Building on I210, this course enhanced my Python skills and introduced Flask for web development. I learned to create dynamic web pages, manage source code with Git, and incorporate external data into applications.</p>
-            </div>
-        </div>
-
-        <!-- Future Goals -->
-        <div class="academics-section">
-            <h3>Future Goals</h3>
-            <p>
-                I am passionate about user-centered design and technology. As I continue my academic and professional journey, I plan to pursue a master’s degree in UX design to further enhance my skills in creating thoughtful, human-centered solutions.
-            </p>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="py-4 bg-dark text-light text-center">

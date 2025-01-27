@@ -8,11 +8,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/css/styles.css">
     <style>
-        .ao-image {
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        main {
+            flex: 1;
+        }
+        .project-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .card {
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
             width: 100%;
-            height: 300px;
-            object-fit: fill;
-            border-radius: 10px;
+            height: auto; /* Ensure the image fits its dimensions */
+            object-fit: contain; /* Ensure the full image is displayed */
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover img {
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -36,6 +74,8 @@
                             <li><a class="dropdown-item" href="graphic_design.html">Graphic Design</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -43,9 +83,12 @@
     </nav>
 
     <!-- Project Content -->
-    <section class="container py-5">
+    <main class="container py-5">
         <h2 class="text-center">Adventure Outfitters</h2>
-        <p class="text-center">
+        <div class="project-link">
+            <a href="https://cgi.luddy.indiana.edu/~jsamels/i211_project/" class="btn btn-primary" target="_blank">View Project</a>
+        </div>
+        <p class="text-center mt-4">
             An interactive inventory management system for outdoor enthusiasts. This project focuses on user-friendly design and efficient functionality.
         </p>
         <p>
@@ -53,19 +96,31 @@
         </p>
         <div class="row g-4 mt-4">
             <div class="col-md-4">
-                <img src="static/images/aoequipment.png" class="img-fluid ao-image" alt="Adventure Outfitters Equipment">
-                <p class="text-center mt-2">Equipment Management: Manage and update equipment inventory.</p>
+                <div class="card h-100">
+                    <img src="static/images/aoequipment.png" class="img-fluid" alt="Adventure Outfitters Equipment">
+                    <div class="card-body text-center">
+                        <p class="card-text">Equipment Management: Manage and update equipment inventory.</p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4">
-                <img src="static/images/aohomescreen.png" class="img-fluid ao-image" alt="Adventure Outfitters Home Screen">
-                <p class="text-center mt-2">Home Screen: User-friendly interface for easy navigation.</p>
+                <div class="card h-100">
+                    <img src="static/images/aohomescreen.png" class="img-fluid" alt="Adventure Outfitters Home Screen">
+                    <div class="card-body text-center">
+                        <p class="card-text">Home Screen: User-friendly interface for easy navigation.</p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4">
-                <img src="static/images/aopeople.png" class="img-fluid ao-image" alt="Adventure Outfitters People">
-                <p class="text-center mt-2">People Management: Manage and update user information.</p>
+                <div class="card h-100">
+                    <img src="static/images/aopeople.png" class="img-fluid" alt="Adventure Outfitters People">
+                    <div class="card-body text-center">
+                        <p class="card-text">People Management: Manage and update user information.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </main>
 
     <!-- Footer -->
     <footer class="py-4 bg-dark text-light text-center">
